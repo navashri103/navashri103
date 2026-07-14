@@ -6,45 +6,44 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+with+AI+🚀;Building+a+food-waste+startup+🌱;Learning+by+building%2C+not+just+watching;Python+%7C+React+%7C+Next.js+%7C+FastAPI;Photographer+behind+the+code+📸)](https://git.io/typing-svg)
 
-<img src="https://komarev.com/ghpvc/?username=navashri103&style=flat-square&color=blue" alt="Profile views"/>
 
 </div>
 
 ---
 
-# 💫 About Me
+# About Me
 
-🎓 College student from **Chennai, India**, working toward becoming a **full-stack developer with AI**
+College student from **Chennai, India**, working toward becoming a **full-stack developer with AI**
 
-🌱 Currently building a **food-waste startup** with a 12-person team — stress-testing the business model in the real world
+Currently building a **food-waste startup** with a 12-person team — stress-testing the business model in the real world
 
-🐍 Strengthening my **Python** foundations, moving toward **FastAPI** and **Django**
+Strengthening my **Python** foundations, moving toward **FastAPI** and **Django**
 
-🤖 Exploring **AI tools and agentic workflows** to build smarter applications
+Exploring **AI tools and agentic workflows** to build smarter applications
 
-💡 I believe in **learning by building** — turning ideas into working products, not just tutorials into notes
+I believe in **learning by building** — turning ideas into working products, not just tutorials into notes
 
-📸 When I'm not coding, I'm behind a camera — photography taught me to notice details, which makes me a better developer too
+When I'm not coding, I'm behind a camera — photography taught me to notice details, which makes me a better developer too
 
-📫 **Portfolio:** [portfolio-nava.vercel.app](https://portfolio-nava.vercel.app)
+**Portfolio:** [portfolio-nava.vercel.app](https://portfolio-nava.vercel.app)
 
 ---
 
-## ⚡ Recent Activity
-<sub>🔄 this section updates itself daily via GitHub Actions</sub>
+##  Recent Activity
+<sub> this section updates itself daily via GitHub Actions</sub>
 
 <!--ACTIVITY:START-->
-- ⏳ First workflow run pending — check back soon!
+-  First workflow run pending — check back soon!
 <!--ACTIVITY:END-->
 
 ---
 
-## 🌐 Socials
+##  Socials
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/nava._.idyllic) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-LINKEDIN-SLUG) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:navashri1032@gmail.com)
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 ### Languages & Frameworks
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=flat-square&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat-square&logo=bootstrap&logoColor=white)
 
@@ -59,7 +58,7 @@
 
 ---
 
-## 📊 GitHub Stats
+##  GitHub Stats
 <div align="center">
 
 ![](https://github-readme-stats.shion.dev/api?username=navashri103&theme=gotham&hide_border=false&include_all_commits=false&count_private=false)
@@ -71,7 +70,7 @@
 
 ---
 
-## 🐍 Contribution Snake
+##  Contribution Snake
 <div align="center">
 
 ![Snake animation](https://raw.githubusercontent.com/navashri103/navashri103/output/github-contribution-grid-snake-dark.svg)
@@ -80,15 +79,15 @@
 
 ---
 
-## 🏆 GitHub Trophies
+## GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=navashri103&theme=darkhub&no-frame=false&no-bg=true&margin-w=4&row=1)
 
 ---
 
-### ✍️ Random Dev Quote
+### Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 
-### 🔝 Top Contributed Repo
+###  Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=navashri103&limit=5&theme=transparent&combine_all_yearly_contributions=true)
 
 <!-- Animated wave footer -->
