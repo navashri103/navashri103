@@ -1,10 +1,11 @@
-"""Updates the GET /nava/activity section of the profile README.
+"""Updates the Recent Activity section of the profile README.
 
 Runs daily via GitHub Actions. Fetches recent public events from the
 GitHub API and rewrites the block between the ACTIVITY markers.
 """
 
 import json
+import os
 import re
 import urllib.request
 from datetime import datetime, timezone
@@ -17,42 +18,59 @@ END = "<!--ACTIVITY:END-->"
 
 def fetch_events():
     url = f"https://api.github.com/users/{USERNAME}/events/public?per_page=30"
-    req = urllib.request.Request(url, headers={"User-Agent": USERNAME})
+    headers = {"User-Agent": USERNAME}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as resp:
         return json.load(resp)
 
 
 def summarize(events):
-    commits = []
-    repos = set()
+    lines = []
     for event in events:
-        repo = event["repo"]["name"]
-        repos.add(repo)
-        if event["type"] == "PushEvent":
-            for c in event["payload"].get("commits", []):
-                commits.append({"repo": repo, "message": c["message"].split("\n")[0]})
-    return {
-        "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "recent_commits": commits[:5] or ["quiet week — probably studying or building offline"],
-        "active_repos": sorted(repos)[:5],
-        "commits_fetched": len(commits),
-    }
+        repo = event["repo"]["name"].split("/")[-1]
+        etype = event["type"]
+        if etype == "PushEvent":
+            for c in event["payload"].get("commits", [])[:2]:
+                msg = c["message"].split("\n")[0][:70]
+                lines.append(f"- 🚀 Pushed `{msg}` to **{repo}**")
+        elif etype == "CreateEvent" and event["payload"].get("ref_type") == "repository":
+            lines.append(f"- ✨ Created a new repo: **{repo}**")
+        elif etype == "PullRequestEvent":
+            action = event["payload"]["action"]
+            lines.append(f"- 🔀 {action.capitalize()} a pull request in **{repo}**")
+        elif etype == "IssuesEvent":
+            action = event["payload"]["action"]
+            lines.append(f"- 🐛 {action.capitalize()} an issue in **{repo}**")
+        elif etype == "WatchEvent":
+            lines.append(f"- ⭐ Starred **{event['repo']['name']}**")
+        if len(lines) >= 6:
+            break
+
+    if not lines:
+        lines = ["- 🌱 Quiet week — probably studying or building offline"]
+
+    stamp = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
+    lines.append(f"\n<sub>Last updated: {stamp}</sub>")
+    return "\n".join(lines)
 
 
 def main():
     try:
-        activity = summarize(fetch_events())
+        body = summarize(fetch_events())
     except Exception as exc:  # keep README valid even if the API hiccups
-        activity = {"error": f"activity fetch failed: {exc}", "status": 503}
+        body = f"- ⚠️ Activity fetch failed ({exc}) — will retry tomorrow"
 
-    block = f"{START}\n{json.dumps(activity, indent=2, ensure_ascii=False)}\n{END}"
+    block = f"{START}\n{body}\n{END}"
 
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
     content = re.sub(
         f"{re.escape(START)}.*?{re.escape(END)}",
-        lambda _: block,  # lambda so backslashes in JSON aren't treated as escapes
+        lambda _: block,  # lambda so backslashes in text aren't treated as escapes
         content,
         flags=re.DOTALL,
     )
