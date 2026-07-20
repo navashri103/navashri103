@@ -4,7 +4,7 @@
 <!-- Typing animation -->
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+with+AI+🚀;Building+a+food-waste+startup+🌱;Learning+by+building%2C+not+just+watching;Python+%7C+React+%7C+Next.js+%7C+FastAPI;Photographer+behind+the+code+📸)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;Building+a+food-waste+startup+🌱;Learning+by+building%2C+not+just+watching;Python+%7C+React+%7C+Next.js+%7C+FastAPI;Photographer+behind+the+code+📸)](https://git.io/typing-svg)
 
 
 </div>
