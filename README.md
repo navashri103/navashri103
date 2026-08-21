@@ -33,10 +33,9 @@ When I'm not coding, I'm behind a camera — photography taught me to notice det
 <sub> this section updates itself daily via GitHub Actions</sub>
 
 <!--ACTIVITY:START-->
-- 🔀 Merged a pull request in **finally_lstprjct**
-- 🔀 Opened a pull request in **finally_lstprjct**
+- 🌱 Quiet week — probably studying or building offline
 
-<sub>Last updated: 20 Aug 2026, 03:24 UTC</sub>
+<sub>Last updated: 21 Aug 2026, 03:30 UTC</sub>
 <!--ACTIVITY:END-->
 
 ---
