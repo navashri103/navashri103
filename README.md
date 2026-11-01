@@ -35,7 +35,7 @@ When I'm not coding, I'm behind a camera — photography taught me to notice det
 <!--ACTIVITY:START-->
 - 🌱 Quiet week — probably studying or building offline
 
-<sub>Last updated: 31 Oct 2026, 08:43 UTC</sub>
+<sub>Last updated: 01 Nov 2026, 09:33 UTC</sub>
 <!--ACTIVITY:END-->
 
 ---
